@@ -120,6 +120,8 @@ position: relative;
     width: 65%;
     margin: auto;
     margin-top: 80px;
+    max-width: 1050px;
+    
 }
 
 .radio_section{
@@ -150,4 +152,27 @@ position: relative;
 
 .row{
     gap: 3rem;
+    
+}
+
+.descriptions{
+    margin-top: 80px;
+}
+
+.description{
+    align-items: flex-start;
+    margin:20px 0;
+}
+
+div>i{
+    padding: 0 5px;
+}
+
+.column_button{
+    justify-content: center;
+    margin-top: 30px;
+}
+.free_trial_button{
+    width: 100%;
+    padding: 10px;
 }
