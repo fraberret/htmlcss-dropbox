@@ -1,11 +1,57 @@
+/* color palette */
+:root{
+   
+    /* site color */
+    --dropbox-primary: rgba(180, 208, 231, 1);
+    --dropbox-accent: rgba(0, 97, 255, 1);
+    --dropbox-light: rgba(245, 245, 245, 1);
+    --dropbox-lighter: rgba(255, 255, 255, 1);
+    --dropbox-dark: rgba(97, 8, 43, 1);
+    --dropbox-darker: rgba(0, 0, 0, 1);
+   
+    /* logos color */
+    --dropbox-square-lightred: rgba(255, 28, 28, 1);
+    --dropbox-square-red: rgba(213, 0, 31, 1);
+    --dropbox-square-darkred: rgba(97, 8, 43, 1);
+    --dropbox-square-lightblue: rgba(0, 147, 206, 1);
+    --dropbox-square-blue: rgba(13, 36, 129, 1);
+    --dropbox-square-primary: rgba(180, 208, 231, 1);
+    --dropbox-square-yellow: rgba(255, 216, 48, 1);
+    --dropbox-square-green: rgba(162, 211, 155, 1);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+button{
+    background-color: var(--dropbox-accent);
+    color: var(--dropbox-lighter);
+    padding: 2px 7px;
+}
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
-body{
-    background-color: red;
+.d-flex{
+    display: flex;
+}
+
+.right_side{
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    
+    
+}
+
+#site_header{
+    justify-content: space-between;
+    padding: 10px;
+   
 }
