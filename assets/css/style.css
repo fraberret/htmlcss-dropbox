@@ -130,10 +130,7 @@ a{
     background-color: var(--dropbox-primary);
     margin-bottom: 100px;
     
-    & .title{
-    
-        padding-bottom: 30px ;
-    }
+   
     
     & .jumbotron_contents{
 
@@ -161,7 +158,11 @@ a{
         }  
     }  
 }
- 
+  .title{
+    
+        padding-bottom: 30px ;
+        font-size: 40px;
+    }
 /* #endregion jumbotron */
 
 
@@ -216,7 +217,7 @@ div>i{
 }
 
 .contacts{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 div > .padding-10{
