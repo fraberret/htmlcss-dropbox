@@ -24,17 +24,6 @@
     flex-wrap: wrap;
 }
 
-.debug .column{
-    height: 600px;
-}
-
-.debug .banner{
-    height: 300px;
-}
-
-.debug .container-xl{
-    height: 300px;
-}
 
 *{
     margin: 0;
@@ -128,42 +117,40 @@ a{
     /* #region jumbotron */
 .jumbotron{
     background-color: var(--dropbox-primary);
-       
-}
-.title{
+    margin-bottom: 100px;
     
-    padding-bottom: 30px ;
+    & .title{
+    
+        padding-bottom: 30px ;
+    }
+    
+    & .jumbotron_contents{
+
+        margin: auto;
+        padding-top: 50px;
+        max-width: 1050px;
+    
+        & .left_column{
+            width: 30%;
+            position: relative;
+            }
+        & .image{
+            margin-bottom:-4rem;
+            width: 70%;
+        }
+    
+        & .button_jumbotron{
+            margin:20px 0px;
+        }
+        
+        & .fa-arrow-down{
+            font-size: 40px;
+            position: absolute;
+            bottom: 10px;
+        }  
+    }  
 }
-
-
-
-.jumbotron_contents{
-
-    margin: auto;
-    padding-top: 50px;
-    max-width: 1050px;
-}
-
-.left_column{
-width: 30%;
-position: relative;
-}
-
-.image{
-    margin-bottom:-4rem;
-    width: 70%;
-    background-color: red;
-}
-
-.button_jumbotron{
-    margin:20px 0px;
-}
-
-.fa-arrow-down{
-    font-size: 40px;
-    position: absolute;
-    bottom: 10px;
-}   
+ 
 /* #endregion jumbotron */
 
 
@@ -182,12 +169,14 @@ position: relative;
 
 .col_main{
     padding: 30px;
+    justify-content: space-between;
     
 }
 
 .column{
     border: 1px solid;
-    height: 1000px;
+    height: 100%;
+    
     
 }
 
@@ -214,6 +203,26 @@ div>i{
     width: 100%;
     padding: 10px;
 }
+
+.buy_now{
+    padding:  30px 0;
+    margin-bottom: 50px;
+    
+    & > span{
+        border-bottom: 2px solid black;
+        padding-bottom: 50px;
+
+    }
+}
+
+.left_side{
+    width: 70%;
+}
+
+.padding{
+    padding-top:50px ;
+}
+
 .morethan{
     margin-bottom: 100px;
 }
@@ -272,8 +281,3 @@ footer{
     
 }
 
-span{
-    padding: 10px 0;
-    border-top: 1px solid var(--dropbox-lighter);
-    
-}
