@@ -160,7 +160,7 @@ a{
 }
   .title{
     
-        padding-bottom: 30px ;
+       
         font-size: 40px;
     }
 /* #endregion jumbotron */
@@ -235,24 +235,24 @@ div > .padding-10{
     }
 }
 
-.left_side{
-    width: 70%;
-}
+
 
 .padding{
     padding-top:50px ;
 }
 
 .morethan{
-    margin-bottom: 100px;
+    margin: 100px 0;
+    width: 70%;
 }
 
 
 .logos > .left,
 .logos > .center,
 .logos > .right{
+    flex-wrap: wrap;
     flex-grow: 1;
-    aspect-ratio: 1;
+    height: 452.68px;
 }
 
 .banner{
@@ -276,6 +276,7 @@ border-bottom: 1px solid;
 
 .faq{
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 
@@ -298,3 +299,13 @@ footer{
     
 }
 
+.square{
+    background-color: red;
+   width: 50%;
+   height: 50%;
+}
+
+
+.question{
+    justify-content: space-between;
+}
