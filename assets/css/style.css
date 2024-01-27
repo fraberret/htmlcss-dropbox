@@ -105,6 +105,8 @@ a{
 }
 
 
+
+
 /* #region header section */
 
 .left_side, .right_side {
@@ -113,6 +115,10 @@ a{
     gap: 2rem;
     
     
+}
+
+.left_side{
+    width: 70%;
 }
 
 #site_header{
@@ -287,16 +293,29 @@ footer{
    
 }
 
-.info{
+.footer_section{
     margin: auto;
     padding-top: 50px;
     max-width: 1050px;
     color: var(--dropbox-lighter);
+    
+}
+
+.info_section{
+justify-content: space-between;
+}
+
+.info > p, h3{
+    padding: 5px 0;
 }
 
 .lang{
     margin-top: 100px;
-    
+    color: var(--dropbox-light);
+    & > span{
+        border-top: 1px solid var(--dropbox-light);
+        padding-top: 50px;
+    }
 }
 
 .square{
