@@ -20,10 +20,6 @@
     --dropbox-square-green: rgba(162, 211, 155, 1);
 }
 
-.f-wrap {
-    flex-wrap: wrap;
-}
-
 
 * {
     margin: 0;
@@ -33,6 +29,11 @@
 }
 
 
+/* #region utilities */
+
+.f-wrap {
+    flex-wrap: wrap;
+}
 
 .container {
     width: 50%;
@@ -45,8 +46,6 @@
     flex-wrap: wrap;
     margin-left: -1rem;
     margin-right: -1rem;
-
-
 
 }
 
@@ -85,9 +84,6 @@ img {
     display: block;
 }
 
-.big_title {
-    font-size: 55px;
-}
 
 button {
     background-color: var(--dropbox-accent);
@@ -105,8 +101,14 @@ a {
     display: flex;
 }
 
+div>i {
+    padding: 0 5px;
+}
 
-
+.padding {
+    padding-top: 50px;
+}
+/* #endregion utilities */
 
 /* #region header section */
 
@@ -116,9 +118,11 @@ a {
     justify-content: space-evenly;
     gap: 2rem;
 
-
 }
 
+.big_title {
+    font-size: 55px;
+}
 
 
 #site_header {
@@ -129,10 +133,9 @@ a {
 
 /* #endregion header section */
 
-
 /* #region main section */
 
-/* #region jumbotron */
+    /* #region jumbotron */
 .jumbotron {
     background-color: var(--dropbox-primary);
     margin-bottom: 100px;
@@ -179,10 +182,10 @@ a {
 
 }
 
-/* #endregion jumbotron */
+    /* #endregion jumbotron */
 
 
-
+    /* #region column section */
 .radio_section {
 
     gap: 3rem;
@@ -221,23 +224,9 @@ a {
     align-items: flex-start;
     margin: 20px 0;
 }
-
-div>i {
-    padding: 0 5px;
-}
-
-
 .free_trial_button {
     width: 100%;
     padding: 10px;
-}
-
-.contacts {
-    margin-top: 100px;
-}
-
-div>.padding-10 {
-    padding: 20px 0;
 }
 
 .buy_now {
@@ -252,15 +241,29 @@ div>.padding-10 {
 }
 
 
+    /* #endregion column section */
 
-.padding {
-    padding-top: 50px;
+
+    /* #region contacts section */
+.contacts {
+    margin-top: 100px;
 }
 
+div>.padding-10 {
+    padding: 20px 0;
+}
+    /* #endregion contacts section */
+
+
+    /* #region morethan section */
 .morethan {
     margin: 100px 0;
     width: 70%;
 }
+    /* #endregion morethan section */
+
+
+    /* #region logos section */
 
 
 .logos>.left,
@@ -272,75 +275,6 @@ div>.padding-10 {
     width: 33%;
 
 }
-
-.center{
-    background-color: var(--dropbox-light);
-    padding: 50px;
-}
-
-.comment{
-    padding:30px 0
-}
-
-.banner {
-    background-color: var(--dropbox-primary);
-
-    & .banner_contnents {
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-}
-
-
-.question {
-    padding: 2rem 0;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-}
-
-
-.faq {
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
-
-
-
-footer {
-    background-color: var(--dropbox-darker);
-
-}
-
-.footer_section {
-    margin: auto;
-    padding-top: 50px;
-    max-width: 1050px;
-    color: var(--dropbox-lighter);
-
-}
-
-.info_section {
-    justify-content: space-between;
-}
-
-.info>p,
-h3 {
-    padding: 5px 0;
-}
-
-.lang {
-    margin-top: 100px;
-    color: var(--dropbox-light);
-
-    &>span {
-        border-top: 1px solid var(--dropbox-light);
-        padding-top: 50px;
-    }
-}
-
 .square {
 
     width: 50%;
@@ -379,7 +313,89 @@ h3 {
         }
 }
 
+.center{
+    background-color: var(--dropbox-light);
+    padding: 50px;
+}
+
+.comment{
+    padding:30px 0
+}
+
+    /* #endregion logos section */
+
+
+    /* #region banner section */
+.banner {
+    background-color: var(--dropbox-primary);
+
+    & .banner_contnents {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}
+
+.col_main > .left_side{
+    width: 70%;
+}
+
+    /* #endregion banner section */
+
+
+    /* #region faq section */
+.question {
+    padding: 2rem 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+
+.faq {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+    /* #endregion faq section */
+
+/* #endregion main section */
+
+/* #region footer section */
+footer {
+    background-color: var(--dropbox-darker);
+
+}
+
+.footer_section {
+    margin: auto;
+    padding-top: 50px;
+    max-width: 1050px;
+    color: var(--dropbox-lighter);
+
+}
+
+.info_section {
+    justify-content: space-between;
+}
+
+.info>p,
+h3 {
+    padding: 5px 0;
+}
+
+.lang {
+    margin-top: 100px;
+    color: var(--dropbox-light);
+
+    &>span {
+        border-top: 1px solid var(--dropbox-light);
+        padding-top: 50px;
+    }
+}
+
+
 
 .question {
     justify-content: space-between;
 }
+/* #endregion footer section */
