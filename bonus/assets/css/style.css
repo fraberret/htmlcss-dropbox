@@ -1,4 +1,7 @@
 /* color palette */
+html{
+    scroll-behavior: smooth;
+}
 
 :root {
 
